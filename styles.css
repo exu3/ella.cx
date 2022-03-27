@@ -48,6 +48,10 @@ code {
   margin-right: 12px;
 }
 
+.profile-pic:hover {
+  animation: tada 1s;
+}
+
 .cursor-party {
   animation: cursor-party 3s infinite ease-in-out;
 }
