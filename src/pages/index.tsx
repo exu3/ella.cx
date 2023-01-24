@@ -5,7 +5,11 @@ import styles from "@/styles/Home.module.css";
 
 // const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ flavorText }: { flavor: string }) {
+export default function Home({
+  flavorText,
+}: {
+  flavorText: { flavor: string };
+}) {
   return (
     <>
       {/* <Head>
@@ -23,19 +27,19 @@ export default function Home({ flavorText }: { flavor: string }) {
           width={200}
           height={200}
         />
-        <em>{flavorText.flavor}</em>
+        {/* <em>{flavorText.flavor}</em> */}
       </main>
     </>
   );
 }
 
-export async function getStaticProps() {
-  const flavorText = await fetch(
-    `https://${process.env.VERCEL_URL}/api/flavor`
-  ).then((res) => res.json());
-  return {
-    props: {
-      flavorText,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const flavorText = await fetch(
+//     `https://${process.env.VERCEL_URL}/api/flavor`
+//   ).then((res) => res.json());
+//   return {
+//     props: {
+//       flavorText,
+//     },
+//   };
+// }
