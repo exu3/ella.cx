@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import QRCode from "../components/QRCode.astro";
 
 import { formatDate } from "../../lib/helpers.js";
 
@@ -13,7 +14,8 @@ const randomPost = scraps["posts"][0];
   <main>
     <h1>HELLO THERE.</h1>
     <p>It appears as though you have stumbled upon my website.</p>
-    <img src="https://github.com/exu3.png" alt="cat" style="width: 200px;" />
+    <!-- <img src="https://github.com/exu3.png" alt="cat" style="width: 200px;" /> -->
+    <QRCode color="rbg(0,0,0)" width={500} height={500} bgColor="none" />
     <p>
       In case you were wondering, here is a snippet of what I was up to on {
         formatDate(randomPost["postedAt"])
