@@ -15,32 +15,10 @@ const randomPost = scraps["posts"][0];
     <h1>HELLO THERE.</h1>
     <p>It appears as though you have stumbled upon my website.</p>
     <p>
-      I'm a maker of things and doer of stuff, just having a human experience. I
-      spend the much of my time nowadays traversing the mountains and dirt roads
-      of the Green Mountain State by ways of non-motorized transport.
+      I'm a maker of things and doer of stuff, just having a human experience.
     </p>
-    <!-- <img src="https://github.com/exu3.png" alt="cat" style="width: 200px;" /> -->
     <QRCode color="rbg(0,0,0)" width={500} height={500} bgColor="none" />
-    <!-- Scrapbook stuff  -->
-    <!-- 
-    <p>
-      In case you were wondering, here is a snippet of what I was up to on {
-        formatDate(randomPost["postedAt"])
-      }. Every so often this page gets updated.
-    </p>
-    <ul role="list" class="card-grid">
-      <Card
-        title={formatDate(randomPost["postedAt"])}
-        body={randomPost["text"]}
-        attachments={randomPost["attachments"]}
-      />
-    </ul>
-    --->
   </main>
-  <!-- Footer -->
-  <!-- <footer class="footer">
-    <a href="https://github.com/exu3">GitHub</a>
-  </footer> -->
 </Layout>
 
 <style>
@@ -59,18 +37,5 @@ const randomPost = scraps["posts"][0];
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
-  }
-
-  .footer {
-    text-align: center;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer img {
-    width: 1.5rem;
-    margin: 0 0.5rem;
   }
 </style>
