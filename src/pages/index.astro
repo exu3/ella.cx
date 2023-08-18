@@ -4,12 +4,10 @@ import Card from "../components/Card.astro";
 import QRCode from "../components/QRCode.astro";
 
 import { formatDate } from "../../lib/helpers.js";
-
-const scrapbook = await fetch("https://scrapbook.hackclub.com/api/users/ella");
-const scraps = await scrapbook.json();
-const randomPost = scraps["posts"][0];
+import TenPrint from "../components/TenPrint.astro";
 ---
 
+<TenPrint />
 <Layout title="hi">
   <main>
     <h1>HELLO THERE.</h1>

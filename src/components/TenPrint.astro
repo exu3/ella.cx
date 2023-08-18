@@ -1,0 +1,64 @@
+<div id="bg-pattern" aria-hidden="true">
+  {new Array(25).fill(<div />)}
+</div>
+
+<script lang="javascript">
+  const patternContainer = document.getElementById("bg-pattern");
+
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+
+  console.log("Window Width:", windowWidth);
+  console.log("Window Height:", windowHeight);
+
+  function updateWindowDimensions() {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    console.log("Window Width updated:", windowWidth);
+    console.log("Window Height updated:", windowHeight);
+  }
+
+  updateWindowDimensions();
+
+  // Listen for the resize event and update dimensions
+  window.addEventListener("resize", updateWindowDimensions);
+
+  function generate10PrintPattern(rows, columns) {
+    const characters = ["/", "\\"];
+    let pattern = "";
+
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < columns; col++) {
+        const randomCharacter =
+          characters[Math.floor(Math.random() * characters.length)];
+        pattern += randomCharacter;
+      }
+      pattern += "\n"; // Newline after each row
+    }
+
+    patternContainer.textContent = pattern;
+  }
+
+  generate10PrintPattern(windowWidth, windowHeight);
+</script>
+
+<style>
+  #bg-pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    z-index: -2;
+    filter: blur(4px);
+    font-family: monospace;
+    font-size: 100px;
+    line-height: 70%;
+    color: lightgray;
+    white-space: pre;
+  }
+
+  /* change color based on time of day? */
+</style>
