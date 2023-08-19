@@ -1,22 +1,20 @@
-<div id="bg-pattern" aria-hidden="true">
-  {new Array(25).fill(<div />)}
-</div>
+<div id="bg-pattern" aria-hidden="true"></div>
 
 <script lang="javascript">
   const patternContainer = document.getElementById("bg-pattern");
 
-  const windowWidth = window.innerWidth;
-  const windowHeight = window.innerHeight;
+  let windowWidth = window.innerWidth;
+  let windowHeight = window.innerHeight;
 
-  console.log("Window Width:", windowWidth);
-  console.log("Window Height:", windowHeight);
+  // console.log("Window Width:", windowWidth);
+  // console.log("Window Height:", windowHeight);
 
   function updateWindowDimensions() {
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
+    windowWidth = window.innerWidth;
+    windowHeight = window.innerHeight;
 
-    console.log("Window Width updated:", windowWidth);
-    console.log("Window Height updated:", windowHeight);
+    // console.log("Window Width updated:", windowWidth);
+    // console.log("Window Height updated:", windowHeight);
   }
 
   updateWindowDimensions();
@@ -56,7 +54,7 @@
     font-family: monospace;
     font-size: 100px;
     line-height: 70%;
-    color: lightgray;
+    color: rgba(189, 236, 225, 0.727);
     white-space: pre;
   }
 

@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import QRCode from "../components/QRCode.astro";
 
 import { formatDate } from "../../lib/helpers.js";
-import TenPrint from "../components/TenPrint.astro";
+// import TenPrint from "../components/TenPrint.astro";
 ---
 
-<TenPrint />
+<!-- <TenPrint /> -->
 <Layout title="hi">
   <main>
     <h1>HELLO THERE.</h1>
@@ -15,7 +14,8 @@ import TenPrint from "../components/TenPrint.astro";
     <p>
       I'm a maker of things and doer of stuff, just having a human experience.
     </p>
-    <QRCode color="rbg(0,0,0)" width={500} height={500} bgColor="none" />
+    <img src="./killington.jpg" width="100%" />
+    <em>📍 Killington, VT</em>
   </main>
 </Layout>
 
