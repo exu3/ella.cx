@@ -4,6 +4,7 @@
   padding: 6rem;
   min-height: 100vh;
   max-width: 90vw;
+  font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 800px) {
     padding: 24px;
