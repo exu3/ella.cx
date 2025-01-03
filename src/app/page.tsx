@@ -18,14 +18,14 @@ export default function Home() {
       <div>
         <PhotoGallery
           images={[
-            "gallery/woodford.png",
+            "/gallery/woodford.png",
             "/gallery/grout-pond.JPG",
             "/gallery/wood-heart.JPG",
-            "gallery/copperbowl.jpg",
+            "/gallery/copperbowl.jpg",
             "/gallery/splitflap.JPG",
             "/gallery/waterjet.JPG",
-            "gallery/bad-apple-orpheus.JPG",
-            "gallery/assemble-acrylic.JPG",
+            "/gallery/bad-apple-orpheus.JPG",
+            // "/gallery/assemble-acrylic.JPG",
             "/gallery/fyde-car.JPG",
             "/gallery/sourdough.JPG",
           ]}

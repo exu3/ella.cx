@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./gallery.module.css";
 
 type PhotoGalleryProps = {
@@ -9,10 +10,12 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ images }) => {
     <div className={styles.galleryContainer}>
       {images.map((image, index) => (
         <div key={index} className={styles.galleryItem}>
-          <img
+          <Image
             src={image}
-            alt={`Gallery item ${index + 1}`}
+            alt={image}
             className={styles.image}
+            width={300}
+            height={300}
           />
         </div>
       ))}
