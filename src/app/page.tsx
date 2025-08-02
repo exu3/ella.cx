@@ -5,12 +5,20 @@ import PhotoGallery from "./components/gallery";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <h1 className={styles.title}>ella.cx</h1>
+      <span className={styles.subtitle}>(a maker of things)</span>
+
       <div className={styles.header}>
-        <p>Ella is a maker of things, based somewhere in Vermont.</p>
-        <p>Currently studying engineering at the University of Vermont.</p>
         <p>
-          Interest and experience in trail building, carpentry, agriculture,
-          energy, web programming, and fabrication.
+          I make home in Huntington, VT and do work that engages with societal
+          functions in a way that is tangible, fun/interesting, and useful
+          (sometimes in unconventional ways). I am currently on a side quest as
+          an undergrad in the College of Engineering at UVM.
+        </p>
+        <br />
+        <p>
+          Have experience in carpentry, fabrication, agriculture, energy,
+          software development, design, and trail building.
         </p>
       </div>
       <div>
@@ -23,8 +31,7 @@ export default function Home() {
             "/gallery/splitflap.JPG",
             "/gallery/waterjet.JPG",
             "/gallery/bad-apple-orpheus.JPG",
-            // "/gallery/assemble-acrylic.JPG",
-            "/gallery/fyde-car.JPG",
+            "/gallery/peas.JPG",
             "/gallery/sourdough.JPG",
           ]}
         />
