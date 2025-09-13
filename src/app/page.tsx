@@ -17,8 +17,9 @@ export default function Home() {
         <br />
         <p>
           I have experience in carpentry, fabrication, agriculture, energy, and
-          software development, and I am currently on a side quest in
-          Engineering School in pursuit of a college degree.
+          software development, and I am currently on (and nearing the end of)
+          an academic side quest in pursuit of a Bachelor&apos;s of Science in
+          Engineering.
         </p>
         <br />
         <p>
