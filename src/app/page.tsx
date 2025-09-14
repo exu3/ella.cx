@@ -18,7 +18,7 @@ export default function Home() {
         <p>
           I have experience in carpentry, fabrication, agriculture, energy, and
           software development, and I am currently on an academic side quest in
-          pursuit of a Bachelor&apos;s of Science in Engineering.
+          pursuit of a BS in engineering, whatever that means.
         </p>
         <br />
         <p>
