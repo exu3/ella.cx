@@ -10,19 +10,20 @@ export default function Home() {
 
       <div className={styles.header}>
         <p>
-          I make home in Huntington, VT and do work that engages with societal
+          I make home in Huntington, VT and do work that relates to societal
           functions in ways that are sometimes unconventional.
         </p>
-        <br />
+        {/* <br />
         <p>
           On paper, I study Engineering, but my interests are broad. I have
           experience in agriculture, energy systems, fabrication, carpentry,
           environmental conservation, and computer programming.
+          
         </p>
         <br />
         <p>
           You can reach me by electronic mail addressed to me at this domain.
-        </p>
+        </p> */}
       </div>
       <div>
         <PhotoGallery
@@ -31,11 +32,10 @@ export default function Home() {
             "/gallery/grout-pond.JPG",
             "/gallery/wood-heart.JPG",
             "/gallery/copperbowl.jpg",
-            "/gallery/splitflap.JPG",
             "/gallery/waterjet.JPG",
             "/gallery/bad-apple-orpheus.JPG",
             "/gallery/peas.JPG",
-            "/gallery/sourdough.JPG",
+            "/gallery/timberline.png",
           ]}
         />
       </div>
